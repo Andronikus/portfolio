@@ -1,0 +1,35 @@
+// Widescreen sizes
+@include mediaXL {
+
+}
+
+// Desktops & Laptops
+@include mediaLg {
+
+}
+
+// Tablets & Small laptops
+@include mediaMd {
+    main {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+// Smartphones
+@include mediaSm {
+    main {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        h1 {
+            margin-top: 5vh;
+        }
+    }
+    .lg-heading {
+        text-align: center;
+
+        font-size: 2rem;
+    }
+}
