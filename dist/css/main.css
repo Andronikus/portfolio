@@ -96,7 +96,7 @@
 body {
   background: #444;
   color: white;
-  height: 100%;
+  height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-image {
@@ -109,7 +109,7 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      height: 100%;
+      height: 100vh;
       width: 100%;
       z-index: -1; }
 
@@ -156,7 +156,7 @@ main {
     text-align: left;
     font-size: 4rem; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 361px) and (max-width: 500px) {
   main#home h1 {
     font-size: 4rem;
     margin-top: 20vh;
@@ -182,3 +182,37 @@ main {
     transform: translateX(100%);
     font-size: 24px;
     font-weight: 800; } }
+
+@media screen and (max-width: 360px) {
+  main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 3rem; }
+    main#home h1 {
+      font-size: 2.8rem;
+      margin-top: 25vh; }
+    main#home h2 {
+      font-size: 1.2rem; }
+  h1.lg-heading {
+    margin-bottom: 1rem;
+    text-align: center; }
+  .menu-branding, .menu-nav {
+    float: none;
+    width: 100%; }
+    .menu-branding.show, .menu-nav.show {
+      transform: translateX(0); }
+  .menu-branding {
+    height: 33vh;
+    transform: translateX(-100%); }
+    .menu-branding .portrait {
+      width: 150px;
+      height: 150px;
+      background-image: url("../assets/img/james_small.jpg"); }
+  .menu-nav {
+    height: 67vh;
+    transform: translateX(100%);
+    font-weight: 800; }
+  .menu .nav-link {
+    font-size: 25px;
+    font-weight: 400; } }
