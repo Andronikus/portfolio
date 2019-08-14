@@ -88,23 +88,6 @@
     .menu .nav-link:hover {
       color: #eece1a; }
 
-@media screen and (max-width: 768px) {
-  main {
-    display: flex;
-    flex-flow: column;
-    align-items: center; } }
-
-@media screen and (max-width: 500px) {
-  main {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center; }
-    main h1 {
-      margin-top: 5vh; }
-  .lg-heading {
-    text-align: center;
-    font-size: 2rem; } }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -164,3 +147,38 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-flow: column; }
+  h1.lg-heading {
+    text-align: left;
+    font-size: 4rem; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    font-size: 4rem;
+    margin-top: 20vh;
+    margin-bottom: 1rem; }
+  main#home h2 {
+    font-size: 1.2rem; }
+  div.menu-branding,
+  ul.menu-nav {
+    float: none;
+    width: 100%; }
+    div.menu-branding.show,
+    ul.menu-nav.show {
+      transform: translateX(0); }
+  div.menu-branding {
+    height: 25vh;
+    transform: translateX(-100%); }
+    div.menu-branding .portrait {
+      width: 150px;
+      height: 150px;
+      background-image: url("../assets/img/james_small.jpg"); }
+  ul.menu-nav {
+    height: 75vh;
+    transform: translateX(100%);
+    font-size: 24px;
+    font-weight: 800; } }

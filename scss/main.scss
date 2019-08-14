@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
+
 
 * {
     box-sizing: border-box;
@@ -67,3 +67,6 @@ main {
         }
     }
 }
+
+
+@import 'mobile';
