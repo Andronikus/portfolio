@@ -19,6 +19,12 @@
         text-align: left;
         font-size: 4rem;
     }
+
+    .about-info{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+
+    }
 }
 // Smartphones
 @include mediaSm {
@@ -59,6 +65,12 @@
        font-size: 24px;
        font-weight: 800;
    }
+
+   .about-info{
+    grid-template-columns: 1fr;
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+
+}
 }
 
 @include mediaXSm {
@@ -118,5 +130,11 @@
             font-size: 25px;
             font-weight: 400;
         }
+    }
+
+    .about-info{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+
     }
 }
