@@ -1,6 +1,8 @@
 // Widescreen sizes
 @include mediaXL {
-
+    .work-info{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 // Desktops & Laptops
@@ -24,6 +26,10 @@
         grid-template-columns: 1fr;
         grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
 
+    }
+
+    .work-info{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 // Smartphones
@@ -70,7 +76,12 @@
     grid-template-columns: 1fr;
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
 
-}
+    }
+
+    .work-info{
+        grid-template-columns: 1fr;
+    }
+    
 }
 
 @include mediaXSm {
